@@ -1,0 +1,54 @@
+.savage-around-container {
+    height: 130px;
+    width: 130px;
+    position: relative;
+}
+
+.savage-around-container img {
+    position: absolute;
+    display: none;
+}
+
+.savage-horizontal-container img {
+    opacity: 0;
+}
+
+.roundloader-image-1 {
+    top: 0px;
+    left: 50px;
+}
+
+.roundloader-image-2 {
+    top: 15px;
+    left: 85px;
+}
+
+.roundloader-image-3 {
+    top: 50px;
+    left: 100px;
+}
+
+.roundloader-image-4 {
+    top: 85px;
+    left: 85px;
+}
+
+.roundloader-image-5 {
+    top: 100px;
+    left: 50px;
+}
+
+.roundloader-image-6 {
+    top: 85px;
+    left: 15px;
+}
+
+.roundloader-image-7 {
+    top: 50px;
+    left: 0px;
+}
+
+.roundloader-image-8 {
+    top: 15px;
+    left: 15px;
+}
