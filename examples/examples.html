@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+    <title>Oooh yeah!</title>
+    <style>
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #e6e6e6;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        tr td:nth-child(1) {
+            width: 100px;;
+        }
+        tr td:nth-child(2n) {
+            width: 300px;;
+        }
+        
+        td {
+            border: 1px #cacaca solid;
+            padding: 10px;
+        }
+        
+        thead td {
+            background-color: #fff;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../source/savage-loader.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>example 1</td>
+            <td>
+                <div id="area1">
+                </div>
+            </td>
+            <td>
+                Basic example of a round loading animation
+                <pre>
+$('#area1').savageLoader();
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 2</td>
+            <td>
+                <div id="area2">
+                </div>
+            </td>
+            <td>
+                Altering the timing of the animation; moveToNextDelay = the time it takes for the animation to move between images, fadeDelay = the time it takes for each image to disappear.
+                <pre>
+$('#area2').savageLoader( {
+    moveToNextDelay: 100,
+    fadeDelay: 600
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 3</td>
+            <td>
+                <div id="area3">
+                </div>
+            </td>
+            <td>
+                Using a different type of fade ('hide' vs 'fade').
+                <pre>
+$('#area3').savageLoader({
+    moveToNextDelay: 100,
+    fadeDelay: 700,
+    fadeType: "hide"
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 4</td>
+            <td>
+                <div id="area4">
+                </div>
+            </td>
+            <td>
+                A horizontal loading animation.
+                <pre>
+$('#area4').savageLoader({
+    fadeDelay: 1300,
+    loaderType: "horizontal"
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 5</td>
+            <td>
+                <div id="area5">
+                </div>
+            </td>
+            <td>
+                A smaller version of the above.
+                <pre>
+$('#area5').savageLoader({
+    fadeDelay: 1000,
+    loaderType: "horizontal",
+    imageCount: 5,
+    turnDelay: 100
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 6</td>
+            <td>
+                <div id="area6">
+                </div>
+            </td>
+            <td>
+                Spinning loading indicator
+                <pre>
+$('#area6').savageLoader({
+    loaderType: "rotate"
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 7</td>
+            <td>
+                <div id="area7">
+
+                </div>
+            </td>
+            <td>
+                ditto, but spinning faster
+                <pre>
+$('#area7').savageLoader({
+    moveToNextDelay: 40,
+    angleIncrement: 10,
+    loaderType: "rotate"
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 8</td>
+            <td>
+                <div id="area8">
+                </div>
+            </td>
+            <td>
+                a loading indicator that pulses in and out
+                <pre>
+$('#area8').savageLoader({
+    loaderType: "pulse"
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 9</td>
+            <td>
+                <div id="area9">
+
+                </div>
+            </td>
+            <td>
+                ditto, but faster
+                <pre>
+$('#area9').savageLoader({
+    moveToNextDelay: 50,
+    loaderType: "pulse"
+});
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 10</td>
+            <td>
+                <div id="area10">
+                    
+                </div>
+            </td>
+            <td>
+                An loading indicator that flips on the x axis
+                <pre>
+
+
+$('#area10').savageLoader({
+    moveToNextDelay: 50,
+    loaderType: "rotateX"
+});
+
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 11</td>
+            <td>
+                <div id="area11">
+                </div>
+            </td>
+            <td>
+                A loading indicator that flips on the y axis
+                <pre>
+$('#area11').savageLoader({
+    moveToNextDelay: 50,
+    loaderType: "rotateY"
+});
+                        
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>example 12</td>
+            <td>
+                <div id="area12">
+                </div>
+            </td>
+            <td>
+                ditto, but faster
+                <pre>
+$('#area12').savageLoader({
+    moveToNextDelay: 10,
+    loaderType: "rotateY"
+});
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../source/savage-loader.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+            $('#area1').savageLoader();
+            $('#area2').savageLoader( {
+                moveToNextDelay: 100,
+                fadeDelay: 600
+            });
+            $('#area3').savageLoader({
+                moveToNextDelay: 100,
+                fadeDelay: 700,
+                fadeType: "hide"
+            });
+            $('#area4').savageLoader({
+                fadeDelay: 1300,
+                loaderType: "horizontal"
+            });
+            $('#area5').savageLoader({
+                fadeDelay: 1000,
+                loaderType: "horizontal",
+                imageCount: 5,
+                turnDelay: 100
+            });
+            $('#area6').savageLoader({
+                loaderType: "rotate"
+            });
+            $('#area7').savageLoader({
+                moveToNextDelay: 40,
+                angleIncrement: 10,
+                loaderType: "rotate"
+            });
+            $('#area8').savageLoader({
+                loaderType: "pulse"
+            });
+            $('#area9').savageLoader({
+                moveToNextDelay: 50,
+                loaderType: "pulse"
+            });
+            $('#area10').savageLoader({
+                moveToNextDelay: 50,
+                loaderType: "rotateX"
+            });
+            $('#area11').savageLoader({
+                moveToNextDelay: 50,
+                loaderType: "rotateY"
+            });
+            $('#area12').savageLoader({
+                moveToNextDelay: 10,
+                loaderType: "rotateY"
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
