@@ -16,3 +16,6 @@ below are some gifs of what they look like.
 ## example 3 - horizontal loader:
 
 ![Example 3](examples/savage-loader-ex3.gif?raw=true "horizontal loader")
+
+
+for the fans: http://htmlpreview.github.io/?https://github.com/kelvinperrie/SavageLoaders/blob/master/examples/examples2.html
