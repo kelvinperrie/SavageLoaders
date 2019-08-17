@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+    <title>Oooh yeah!</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../source/savage-loader.css">
+</head>
+
+<body>
+
+
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../source/savage-loader.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            for(var i = 0; i < 3000; i++) {
+                $('body').prepend($('<div>', { }));
+            }
+
+            $('div').savageLoader({
+                moveToNextDelay: 10,
+                loaderType: "rotateY"
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
