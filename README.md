@@ -1,7 +1,7 @@
 # SavageLoaders
 Oooh yeah! Loading animations are boring. When you're waiting for something to load you need to be looking at an interesting animation. Here are some loading animations built in jquery/css using the head of the legendary Randy Macho Man Savage.
 
-See the examples page for usage: http://htmlpreview.github.io/?https://github.com/kelvinperrie/SavageLoaders/blob/master/examples/examples.html
+See the examples page for usage: https://savageloaders.netlify.app/examples/examples.html
 
 below are some gifs of what they look like.
 
@@ -18,4 +18,4 @@ below are some gifs of what they look like.
 ![Example 3](examples/savage-loader-ex3.gif?raw=true "horizontal loader")
 
 
-for the fans: http://htmlpreview.github.io/?https://github.com/kelvinperrie/SavageLoaders/blob/master/examples/examples2.html
+for the fans: https://savageloaders.netlify.app/examples/examples2.html
